@@ -1,0 +1,47 @@
+{
+  "companion": {
+    "name": "Luna",
+    "personality": "friendly",
+    "language": "id"
+  },
+  "gemini": {
+    "model": "gemini-2.0-flash",
+    "max_output_tokens": 2048,
+    "temperature": 0.8,
+    "circuit_breaker": {
+      "failure_threshold": 3,
+      "reset_timeout_ms": 60000
+    }
+  },
+  "context": {
+    "max_tokens": 30000,
+    "system_prompt_budget": 2000,
+    "working_memory_budget": 2000,
+    "episodic_memory_budget": 3000,
+    "episodic_memory_top_k": 5,
+    "rag_budget": 3000,
+    "rag_top_k": 3,
+    "conversation_history_budget": 15000,
+    "response_reserve": 5000
+  },
+  "memory": {
+    "importance_threshold_keep": 7,
+    "importance_threshold_discard": 4,
+    "consolidation_interval_messages": 50,
+    "max_memories_per_player": 1000
+  },
+  "scheduler": {
+    "max_queue_size": 50,
+    "max_pause_stack": 5
+  },
+  "planner": {
+    "max_replans": 3,
+    "simple_plan_max_steps": 2,
+    "medium_plan_max_steps": 5
+  },
+  "gameplay": {
+    "max_actions_per_10s": 5,
+    "safety_boundary_radius": 10,
+    "confirm_destructive": true
+  }
+}
