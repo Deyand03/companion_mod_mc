@@ -1,4 +1,28 @@
+# === Agent Config ===
 .agents
-node_modules
+
+# === Draft (internal) ===
 draft_mod_mc.md
-.env
+
+# === Backend ===
+backend/node_modules/
+backend/dist/
+backend/.env
+backend/data/
+
+# === Mod ===
+mod/.gradle/
+mod/build/
+mod/run/
+mod/.fabric/
+mod/bin/
+
+# === IDE ===
+.idea/
+*.iml
+.vscode/
+*.class
+
+# === OS ===
+.DS_Store
+Thumbs.db
