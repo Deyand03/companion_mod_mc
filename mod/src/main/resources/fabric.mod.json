@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "companion",
+  "version": "${version}",
+  "name": "AI Companion",
+  "description": "An AI-powered companion for Minecraft, powered by Gemini.",
+  "authors": ["Defry"],
+  "contact": {
+    "sources": "https://github.com/Deyand03/companion_mod_mc"
+  },
+  "license": "MIT",
+  "icon": "assets/companion/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": ["com.companion.CompanionMod"],
+    "client": ["com.companion.client.CompanionClient"]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
