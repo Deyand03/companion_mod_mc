@@ -43,7 +43,7 @@ public class StatusIndicator {
      */
     public void render(DrawContext drawContext, RenderTickCounter renderTickCounter) {
         MinecraftClient mc = MinecraftClient.getInstance();
-        if (mc.options.debugEnabled) return; // Don't draw over F3
+        if (mc.getDebugHud().shouldShowDebugHud()) return; // Don't draw over F3
 
         int screenWidth = drawContext.getScaledWindowWidth();
         String text = status.label;
