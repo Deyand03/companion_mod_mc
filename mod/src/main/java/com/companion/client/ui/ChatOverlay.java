@@ -58,7 +58,7 @@ public class ChatOverlay {
         if (messages.isEmpty()) return;
 
         MinecraftClient mc = MinecraftClient.getInstance();
-        if (mc.options.debugEnabled) return;
+        if (mc.getDebugHud().shouldShowDebugHud()) return;
 
         int screenHeight = drawContext.getScaledWindowHeight();
         long now = System.currentTimeMillis();
